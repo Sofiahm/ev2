@@ -30,17 +30,13 @@
     <!-- después de ir por las bibliotecas, puedes aprovecharlas-->
 
     <script>
-      var a = ["Hola mundo!","Adios mundo cruel!"]
-
-      var b= {saludo:["Hola mundo!","Holiwi!"],
-      despedida:"Adios mundo cruel!"}
 
       var c=[
         {saludo:"hola mundo", chroma: "red"},
         {saludo:"hola", chroma: "blue"},
         {saludo:"h...", chroma: "green"}
       ]
-        $("h1").text(c[2].saludo).css("color", c[2].chroma);
+
 
 var curso = [
   {
@@ -49,17 +45,18 @@ var curso = [
   ingreso: 2014,
 
   trabajos:[
-    {titulo: "Arboles de Chile",imagen:"arboles.jpg"},
-    {titulo: "mu",imagen:"mu.jpg"},
-    {titulo: "Dualidad",imagen:"dualidad.jpg"}
+    {titulo: "Arboles de Chile",imagen:"https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/f06c0955010741.5cd2faab82382.jpg"},
+    {titulo: "mu",imagen:"https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/2203eb56133767.5cd2fa1c063e3.jpg"},
+    {titulo: "Dualidad",imagen:"https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/f2961c54987203.5cd2fa7f7a30f.jpg"}
+
+]},
 
 ]
-}
-]
 
-$("#cuestiones").append('<h2>'+curso[0].nombre+'</h2>').
-append('<h4>'+curso[0].nombre+'</h4>').
-append('<img srce="'+ curso[0].trabajos[0].imagen+]'">');
+$("#cuestiones").append('<h2>' +curso[0].nombre+'</h2>').append('<h4>' + curso[0].ingreso + '</h4>').append ( '<img src="' + curso[0].trabajos[0].imagen+'">');
+
+
+
 
 
     </script>
